@@ -1,0 +1,99 @@
+:root {
+  --green: #0af7b2; /* Neon green */
+  --red: #fa4eab; /* Bright pink */
+  --background: #1f1f2f; /* Dark navy */
+  --text-color: #ffffff; /* White for higher contrast and readability */
+  --button-hover: #07675a; /* Darker shade of green for button hover state */
+}
+
+html {
+  font-size: 62.5%; /* Sets the base font size for easier rem calculation */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font for a modern feel */
+}
+
+body {
+  width: 80vw;
+  margin: 0 auto;
+  background: var(--background);
+  padding: 4rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Slight transparency for depth */
+  border: 3px solid var(--green);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+h2, h3 {
+  margin: 1rem 0;
+  font-size: 2.5rem; /* Adjusted for better proportion */
+  color: var(--green);
+}
+
+p {
+  font-size: 1.6rem;
+  opacity: 0.85;
+}
+
+.button-wrapper {
+  margin-top: 2rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: var(--green);
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+input {
+  border: 2px solid var(--red);
+  background: transparent;
+  padding: 1rem;
+  width: 90%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  body {
+      width: 60vw;
+  }
+
+  h2, h3 {
+      font-size: 3rem;
+  }
+
+  p {
+      font-size: 1.8rem;
+  }
+}
